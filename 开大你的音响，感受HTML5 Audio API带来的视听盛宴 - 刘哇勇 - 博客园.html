@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.cnblogs.com/Wayou/p/3543577.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/ca-pub-4210569241504288.js"></script><script type="text/javascript" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/encoder.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/bundle-ThinkInside.css">
+<link id="mobile-style" media="only screen and (max-device-width: 980px)" type="text/css" rel="stylesheet" href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/bundle-ThinkInside-mobile.css">
+<link type="text/css" rel="stylesheet" href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/123544.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/Wayou/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/Wayou/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/Wayou/wlwmanifest.xml">
+<script src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'Wayou', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body class=" pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<link rel="stylesheet" type="text/css" href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/pace.css">
+<link href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/not.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/pace.min.js"></script>
+<script type="text/javascript" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/not.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+
+    $("#MyLinks1_MyHomeLink").attr("href", "http://www.cnblogs.com/wayou/p/");
+    $("#cnblogs_post_body em").parent("p").addClass("emphasis_block");
+    $("#cnblogs_post_body a").attr("target", "_blank");
+    $('<a class="fastCom" id="fastCom"  title="快速评论" href="#comment_form_container"></a>').appendTo("#cnblogs_post_body");
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $("#toTop").stop(true, true).fadeIn()
+        } else {
+            $("#toTop").stop(true, true).fadeOut()
+        }
+    });
+    var e = ["感谢推荐！顶贴的都是好人  \\(^______^)/", "欢迎参与评论，博主很激动  \\(^______^)/", "要登陆了才能进行操作哦~"];
+    $(".diggit").bind("click", function() {
+        $.notific8($(".login_tips").length == 0 ? e[0] : e[2], {
+            life: 3e3,
+            heading: "来自博主的问候:",
+            theme: "smoke",
+            sticky: false,
+            horizontalEdge: "top",
+            verticalEdge: "right",
+            zindex: 1500
+        })
+    });
+    $("#btn_comment_submit").bind("click", function() {
+        $.notific8(e[1], {
+            life: 3e3,
+            heading: "来自博主的问候:",
+            theme: "smoke",
+            sticky: false,
+            horizontalEdge: "top",
+            verticalEdge: "right",
+            zindex: 1500
+        })
+    });
+    if ($(".login_tips").length != 0) {
+        $("#fastCom").bind("click", function() {
+            $.notific8(e[2], {
+                life: 3e3,
+                heading: "来自博主的问候:",
+                theme: "smoke",
+                sticky: false,
+                horizontalEdge: "top",
+                verticalEdge: "right",
+                zindex: 1500
+            })
+        })
+    }
+
+    ;(function() {
+        (function(e) {
+            return $.fn.wanker = function(e) {
+                var t;
+                t = $.extend({
+                    delay: 1e3,
+                    duration: 1500
+                }, e);
+                return this.each(function() {
+                    var e, n, r, i, s, o, u;
+                    e = $(this);
+                    i = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                    if (!i) {
+                        r = false;
+                        o = null;
+                        n = null;
+                        u = null;
+                        s = function() {
+                            r = false;
+                            return n = null
+                        };
+                        return $(window).resize(function() {
+                            if (r) {
+                                n = Math.abs(new Date - o)
+                            } else {
+                                o = new Date;
+                                r = true
+                            } if (n > t.delay) {
+                                e.fadeIn()
+                            }
+                            if (u) {
+                                clearTimeout(u)
+                            }
+                            return u = setTimeout(function() {
+                                e.fadeOut();
+                                return s()
+                            }, t.duration)
+                        })
+                    }
+                })
+            }
+        })($)
+    }).call(this);
+    $("[data-wanker]").wanker();
+
+    $('#tbCommentBody').attr('placeholder','来吧~少年，消灭零回复！');
+
+
+}
+</script>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/Wayou/"><img id="blogLogo" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/Wayou/">刘哇勇的部落格</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/Wayou/">首页</a></li>
+<li></li>
+<li></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/Wayou/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/Wayou/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 82&nbsp; </span>
+<span id="stats_article_count">文章 - 1&nbsp; </span>
+<span id="stats-comment_count">评论 - 1575</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/Wayou/p/html5_audio_api_visualizer.html">开大你的音响，感受HTML5 Audio API带来的视听盛宴</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>话说HTML5的炫酷真的是让我爱不释手，即使在这个提到IE就伤心不完的年代。但话又说回来，追求卓越Web创造更美世界这样高的追求什么时候又与IE沾过边儿呢？所以当你在看本文并且我们开始讨论HTML5等前沿东西的时候，我们默认是把IE排除在外的。本文的例子可以工作在最新的Chrome及Firefox浏览器下，其他浏览器暂未测试。</p>
+<p>若下方未出现演示页面请刷新。</p>
+<p><iframe style="width: 90%; height: 430px;" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/saved_resource.html" frameborder="0" width="320" height="240"></iframe></p>
+<p>&nbsp;你也可以点此<a href="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/saved_resource.html" target="_blank">全屏演示</a>&nbsp; 或者前往GitHub进行<a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank">代码下载</a>然后本地运行。</p>
+<p><span><span><span>你还可以</span>&nbsp;<a href="http://pan.baidu.com/s/1eQqqSfS" target="_blank">下载示例音乐</a></span></span>（如果你手头没有音频文件的话）</p>
+<p class="emphasis_block"><em>文件列表：</em><br><em>bbc_sherlock_openning.mp3</em><br><em>Neptune Illusion Dennis Kuo .mp3</em><br><em>单曲Remix ┃ 爱上这个女声 放进专辑里私藏 夜电播音员.mp3</em><br><em>爱啦啦.mp3</em></p>
+<p><span><span>最后，</span>喜欢</span><span>的</span><span>朋友</span><span>可以去</span><a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank">GitHub</a><a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank"><span>星</span></a>我(<a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank"><span>star me</span></a>)<span><a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank">叉</a></span>我(<a href="https://github.com/Wayou/HTML5_Audio_Visualizer" target="_blank"><span>fork me</span></a>)。</p>
+<p>&nbsp;</p>
+<p>这里将要介绍的HTML5 音频处理接口与Audio标签是不一样的。页面上的Audio标签只是HTML5更语义化的一个表现，而HTML5提供给JavaScript编程用的Audio API则让我们有能力在代码中直接操作原始的音频流数据，对其进行任意加工再造。</p>
+<p>展示<a href="http://www.w3.org/TR/webaudio/" target="_blank">HTML5 Audio API</a>&nbsp;最典型直观的一个例子就是跟随音乐节奏变化的频谱图，也称之为可视化效果。本文便是以此为例子展示JavaScript中操作音频数据的。</p>
+<p>文中代码仅供参考，实际代码以下载的源码为准。</p>
+<h1>了解Audio API</h1>
+<p>一段音频到达扬声器进行播放之前，半路对其进行拦截，于是我们就得到了音频数据了，这个拦截工作是由window.AudioContext来做的，我们所有对音频的操作都基于这个对象。通过AudioContext可以创建不同各类的AudioNode，即音频节点，不同节点作用不同，有的对音频加上滤镜比如提高音色(比如<a href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode" target="_blank">BiquadFilterNode</a>)，改变单调，有的音频进行分割，比如将音源中的声道分割出来得到左右声道的声音（<a href="https://developer.mozilla.org/en-US/docs/Web/API/ChannelSplitterNode" target="_blank">ChannelSplitterNode</a>），有的对音频数据进行频谱分析即本文要用到的(<a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode" target="_blank">AnalyserNode</a>)。</p>
+<p><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/160016102061604.png" alt=""></p>
+<h1>浏览器中的Audio API</h1>
+<h2>统一前缀</h2>
+<p>JavaScript中处理音频首先需要实例化一个音频上下文类型window.AudioContext。目前Chrome和Firefox对其提供了支持，但需要相应前缀，Chrome中为window.webkitAudioContext，Firefox中为mozAudioContext。所以为了让代码更通用，能够同时工作在两种浏览器中，只需要一句代码将前缀进行统一即可。</p>
+<div class="cnblogs_code">
+<pre>window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;</pre>
+</div>
+<p>&nbsp;</p>
+<p>这是一种常见的用法，或者操作符'||' 连接起来的表达式中，遇到真值即返回。比如在Chrome中，window.AudioContext为undefined，接着往下走，碰到window.webkitAudioContext不为undefined，表达式在此判断为真值，所以将其返回，于是此时window.AudioContext =window.webkitAudioContext ，所以代码中我们就可以直接使用window.AudioContext 而不用担心具体Chrome还是Firefox了。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> audioContext=<span style="color: #0000ff;">new</span> window.AudioContext();</pre>
+</div>
+<p>&nbsp;</p>
+<h2>考虑浏览器不支持的情况</h2>
+<p>但这还只是保证了在支持AudioContext的浏览器中能正常工作，如果是在IE中，上面实例化对象的操作会失败，所以有必要加个try catch语句来避免报错。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+    </span><span style="color: #0000ff;">var</span> audioContext = <span style="color: #0000ff;">new</span><span style="color: #000000;"> window.AudioContext();
+} </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (e) {
+    Console.log(</span>'!Your browser does not support AudioContext'<span style="color: #000000;">);
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>这样就安全多啦，妈妈再不担心浏览器报错了。</p>
+<h2>组织代码</h2>
+<p>为了更好地进行编码，我们创建一个Visualizer对象，把所有相关属性及方法写到其中。按照惯例，对象的属性直接写在构造器里面，对象的方法写到原型中。对象内部使用的私有方法以短横线开头，不是必要但是种好的命名习惯。</p>
+<p>其中设置了一些基本的属性将在后续代码中使用，详细的还请参见源码，这里只简单展示。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">var</span> Visualizer = <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    </span><span style="color: #0000ff;">this</span>.file = <span style="color: #0000ff;">null</span>, <span style="color: #008000;">//</span><span style="color: #008000;">要处理的文件，后面会讲解如何获取文件</span>
+    <span style="color: #0000ff;">this</span>.fileName = <span style="color: #0000ff;">null</span>, <span style="color: #008000;">//</span><span style="color: #008000;">要处理的文件的名，文件名</span>
+    <span style="color: #0000ff;">this</span>.audioContext = <span style="color: #0000ff;">null</span>, <span style="color: #008000;">//</span><span style="color: #008000;">进行音频处理的上下文，稍后会进行初始化</span>
+    <span style="color: #0000ff;">this</span>.source = <span style="color: #0000ff;">null</span>, <span style="color: #008000;">//</span><span style="color: #008000;">保存音频</span>
+<span style="color: #000000;">};
+Visualizer.prototype </span>=<span style="color: #000000;"> {
+    _prepareAPI: </span><span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;">统一前缀，方便调用</span>
+        window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext ||<span style="color: #000000;"> window.msAudioContext;
+        </span><span style="color: #008000;">//</span><span style="color: #008000;">这里顺便也将requestAnimationFrame也打个补丁，后面用来写动画要用</span>
+        window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame ||<span style="color: #000000;"> window.msRequestAnimationFrame;
+        </span><span style="color: #008000;">//</span><span style="color: #008000;">安全地实例化一个AudioContext并赋值到Visualizer的audioContext属性上，方便后面处理音频使用</span>
+        <span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+            </span><span style="color: #0000ff;">this</span>.audioContext = <span style="color: #0000ff;">new</span><span style="color: #000000;"> AudioContext();
+        } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (e) {
+            console.log(</span>'!妳的浏览器不支持AudioContext:('<span style="color: #000000;">);
+            console.log(e);
+        }
+    },
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<h1>加载音频文件</h1>
+<p>不用说，你肯定得先在代码中获取到音频文件，才能够对其进一步加工。</p>
+<h2>文件获取的方法</h2>
+<p>读取文件到JavaScript可以有以下三种方法：</p>
+<p>1.新开一个Ajax异步请求来获取文件，如果是本地测试需要关掉浏览器的<a href="https://developer.mozilla.org/zh-CN/docs/Same_origin_policy_for_JavaScript" target="_blank">同源安全策略</a>才能获取成功，不然只能把网页放到服务器上才能正常工作。</p>
+<p>具体说来，就是先开一个<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a>请求，将文件路径作为请求的URL，并且设置请求返回类型为'<a href="https://developer.mozilla.org/en-US/docs/Web/API/ArrayBuffer" target="_blank">ArrayBuffer</a>'，这种格式方便我们后续的处理。下面是一个例子。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>loadSound("sample.mp3"); <span style="color: #008000;">//</span><span style="color: #008000;">调用</span><span style="color: #008000;">
+//</span><span style="color: #008000;"> 定义加载音频文件的函数</span>
+<span style="color: #0000ff;">function</span><span style="color: #000000;"> loadSound(url) {
+    </span><span style="color: #0000ff;">var</span> request = <span style="color: #0000ff;">new</span> XMLHttpRequest(); <span style="color: #008000;">//</span><span style="color: #008000;">建立一个请求</span>
+    request.open('GET', url, <span style="color: #0000ff;">true</span>); <span style="color: #008000;">//</span><span style="color: #008000;">配置好请求类型，文件路径等</span>
+    request.responseType = 'arraybuffer'; <span style="color: #008000;">//</span><span style="color: #008000;">配置数据返回类型</span>
+    <span style="color: #008000;">//</span><span style="color: #008000;"> 一旦获取完成，对音频进行进一步操作，比如解码</span>
+    request.onload = <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+        </span><span style="color: #0000ff;">var</span> arraybuffer =<span style="color: #000000;"> request.response;
+    }
+    request.send();
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>2.通过文件类型的input来进行文件选择，监听input的onchnage事件，一担文件选中便开始在代码中进行获取处理，此法方便，且不需要工作在服务器上</p>
+<p>3.通过拖拽的形式把文件拖放到页面进行获取，比前面一种方法稍微繁杂一点（要监听'dragenter','dragover','drop'等事件）但同样可以很好地在本地环境下工作，无需服务器支持。</p>
+<p>更多在JavaScript中获取及处理文件的方法可以见<a href="https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications" target="_blank">这里</a></p>
+<p>不用说，方法2和3方便本地开发与测试，所以我们两种方法都实现，既支持选择文件，也支持文件拖拽。</p>
+<h2>通过选择获取</h2>
+<p>在页面放一个file类型的input。然后在JavaScript中监听它的onchange事件。此事件在input的值发生变化时触发。</p>
+<p class="emphasis_block"><em>对于onchange事件，在Chrome与Firefox中还有一点小的区别，如果你已经选择了一个文件，此时Input就有值了，如果你再次选择同一文件，onchange事件不会触发，但在Firefox中该事件会触发。这里只是提及一下，关系不大。</em></p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">label </span><span style="color: #ff0000;">for</span><span style="color: #0000ff;">="uploadedFile"</span><span style="color: #0000ff;">&gt;</span>Drag<span style="color: #ff0000;">&amp;drop</span> or select a file to play:<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">label</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">input </span><span style="color: #ff0000;">type</span><span style="color: #0000ff;">="file"</span><span style="color: #ff0000;"> id</span><span style="color: #0000ff;">="uploadedFile"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">input</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>当然，这里同时也把最后我们要画图用的canvas也一起放上去吧，后面就不用多话了。所以下面就是最终的HTML了，页面基本不会变，大量的工作是在JavaScript的编写上。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="wrapper"</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="fileWrapper"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="file_wrapper"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="info"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+            HTML5 Audio API showcase | An Audio Viusalizer
+        </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">label </span><span style="color: #ff0000;">for</span><span style="color: #0000ff;">="uploadedFile"</span><span style="color: #0000ff;">&gt;</span>Drag<span style="color: #ff0000;">&amp;drop</span> or select a file to play:<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">label</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">input </span><span style="color: #ff0000;">type</span><span style="color: #0000ff;">="file"</span><span style="color: #ff0000;"> id</span><span style="color: #0000ff;">="uploadedFile"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">input</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="visualizer_wrapper"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">canvas </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">='canvas' </span><span style="color: #ff0000;">width</span><span style="color: #0000ff;">="800"</span><span style="color: #ff0000;"> height</span><span style="color: #0000ff;">="350"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">canvas</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>再稍微写一点样式</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #800000;">#fileWrapper </span>{<span style="color: #ff0000;">
+    transition</span>:<span style="color: #0000ff;"> all 0.5s ease</span>;
+}<span style="color: #800000;">
+#fileWrapper: hover </span>{<span style="color: #ff0000;">
+    opacity</span>:<span style="color: #0000ff;"> 1!important</span>;
+}<span style="color: #800000;">
+#visualizer_wrapper </span>{<span style="color: #ff0000;">
+    text-align</span>:<span style="color: #0000ff;"> center</span>;
+}</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>向Visualizer对象的原型中新加一个方法，用于监听文件选择既前面讨论的onchange事件，并在事件中获取选择的文件。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>_addEventListner: <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    </span><span style="color: #0000ff;">var</span> that = <span style="color: #0000ff;">this</span><span style="color: #000000;">,
+        audioInput </span>= document.getElementById('uploadedFile'<span style="color: #000000;">),
+        dropContainer </span>= document.getElementsByTagName("canvas")[0<span style="color: #000000;">];
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">监听是否有文件被选中</span>
+    audioInput.onchange = <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;">这里判断一下文件长度可以确定用户是否真的选择了文件，如果点了取消则文件长度为0</span>
+        <span style="color: #0000ff;">if</span> (audioInput.files.length !== 0<span style="color: #000000;">) {
+            that.file </span>= audioInput.files[0]; <span style="color: #008000;">//</span><span style="color: #008000;">将文件赋值到Visualizer对象的属性上</span>
+            that.fileName =<span style="color: #000000;"> that.file.name;
+            that._start(); </span><span style="color: #008000;">//</span><span style="color: #008000;">获取到文件后，开始程序，这个方法会在后面定义并实现</span>
+<span style="color: #000000;">        };
+    };
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>上面代码中，我们假设已经写好了一个进一步处理文件的方法_start()，在获取到文件后赋值给Visualizer对象的file属性，之后在_start()方法里我们就可以通过访问this.file来得到该文件了，当然你也可以直接让_start()方法接收一个file参数，但将文件赋值到Visualizer的属性上的好处之一是我们可以在对象的任何方法中都能获取该文件 ，不用想怎么用参数传来传去。同样，将文件名赋值到Visualizer的fileName属性当中进行保存，也是为了方便之后在音乐播放过程中显示当前播放的文件。</p>
+<h2>通过拖拽获取</h2>
+<p>我们把页面中的canvas作为放置文件的目标，在它身上监听拖拽事件'dragenter','dragover','drop'等。</p>
+<p>还是在上面已经添加好的_ addEventListner方法里，接着写三个事件监听的代码。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>dropContainer.addEventListener("dragenter", <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    that._updateInfo(</span>'Drop it on the page', <span style="color: #0000ff;">true</span><span style="color: #000000;">);
+}, </span><span style="color: #0000ff;">false</span><span style="color: #000000;">);
+dropContainer.addEventListener(</span>"dragover", <span style="color: #0000ff;">function</span><span style="color: #000000;">(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    e.dataTransfer.dropEffect </span>= 'copy'; <span style="color: #008000;">//</span><span style="color: #008000;">设置文件放置类型为拷贝</span>
+}, <span style="color: #0000ff;">false</span><span style="color: #000000;">);
+dropContainer.addEventListener(</span>"dragleave", <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    that._updateInfo(that.info, </span><span style="color: #0000ff;">false</span><span style="color: #000000;">);
+}, </span><span style="color: #0000ff;">false</span><span style="color: #000000;">);
+dropContainer.addEventListener(</span>"drop", <span style="color: #0000ff;">function</span><span style="color: #000000;">(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    that.file </span>= e.dataTransfer.files[0]; <span style="color: #008000;">//</span><span style="color: #008000;">获取文件并赋值到Visualizer对象</span>
+    that.fileName =<span style="color: #000000;"> that.file.name;
+    that._start();
+}, </span><span style="color: #0000ff;">false</span>);</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p class="emphasis_block"><em>注意到上面代码中我们在'dragover'时设置文件拖放模式为'copy',既以复制的形式获取文件，如果不进行设置无法正确获取文件 </em></p>
+<p>然后在'drop'事件里，我们获得文件以进行一下步操作。</p>
+<h1>用FileReader读取文件为ArrayBuffer</h1>
+<p>下面来看这个_start()方法，现在文件得到 了，但首先需要将获取的文件转换为ArrayBuffer格式，才能够传递给AudioContext进行解码，所以接下来_start()方法中要干的事情就是实例化一个FileReader来将文件读取为ArrayBuffer格式。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>_start: <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">read and decode the file into audio array buffer</span>
+    <span style="color: #0000ff;">var</span> that = <span style="color: #0000ff;">this</span>, <span style="color: #008000;">//</span><span style="color: #008000;">当前this指代Visualizer对象，赋值给that以以便在其他地方使用</span>
+        file = <span style="color: #0000ff;">this</span>.file, <span style="color: #008000;">//</span><span style="color: #008000;">从Visualizer对象上获取前面得到的文件</span>
+        fr = <span style="color: #0000ff;">new</span> FileReader(); <span style="color: #008000;">//</span><span style="color: #008000;">实例化一个FileReader用于读取文件</span>
+    fr.onload = <span style="color: #0000ff;">function</span>(e) { <span style="color: #008000;">//</span><span style="color: #008000;">文件读取完后调用此函数</span>
+        <span style="color: #0000ff;">var</span> fileResult = e.target.result; <span style="color: #008000;">//</span><span style="color: #008000;">这是读取成功得到的结果ArrayBuffer数据</span>
+        <span style="color: #0000ff;">var</span> audioContext = that.audioContext; <span style="color: #008000;">//</span><span style="color: #008000;">从Visualizer得到最开始实例化的AudioContext用来做解码ArrayBuffer</span>
+        audioContext.decodeAudioData(fileResult, <span style="color: #0000ff;">function</span>(buffer) { <span style="color: #008000;">//</span><span style="color: #008000;">解码成功则调用此函数，参数buffer为解码后得到的结果</span>
+            that._visualize(audioContext, buffer); <span style="color: #008000;">//</span><span style="color: #008000;">调用_visualize进行下一步处理，此方法在后面定义并实现</span>
+        }, <span style="color: #0000ff;">function</span>(e) { <span style="color: #008000;">//</span><span style="color: #008000;">这个是解码失败会调用的函数</span>
+            console.log("!哎玛，文件解码失败:("<span style="color: #000000;">);
+        });
+    };
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">将上一步获取的文件传递给FileReader从而将其读取为ArrayBuffer格式</span>
+<span style="color: #000000;">    fr.readAsArrayBuffer(file);
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>注意这里我们把this赋值给了that，然后再 audioContext.decodeAudioData的回调函数中使用that来指代我们的Visualizer对象。这是因为作用域的原因。我们知道JavaScript中无法通过花括号来创建代码块级作用域，而唯一可以创建作用域的便是函数。一个函数就是一个作用域。函数内部的this指向的对象要视情况而定，就上面的代码来说，它是audioContext。所以如果想要在这个回调函数中调用Visualizer身上方法或属性，则需要通过另一个变量来传递，这里是that,我们通过将外层this（指向的是我们的Viusalizer对象）赋值给新建的局部变量that,此时that便可以传递到内层作用域中，而不会与内层作用域里面原来的this相冲突。像这样的用法在源码的其他地方也有使用，细心的你可以下载本文的源码慢慢研究。</p>
+<p>所以，在 audioContext.decodeAudioData的回调函数里，当解码完成得到audiobuffer文件（buffer参数）后，再把audioContext和buffer传递给Visualizer的_visualize()方法进一步处理：播放音乐和绘制频谱图。当然此时_visualize()方法还没有下，下面便开始实现它。</p>
+<h1>创建Analyser分析器及播放音频</h1>
+<p>上面已经将获取的文件进行解码，得到了audio buffer数据。接下来是设置我们的AudioContext以及获取频谱能量信息的Analyser节点。向Visualizer对象添加_visualize方法，我们在这个方法里完成这些工作。</p>
+<h2>播放音频</h2>
+<p>首先将buffer赋值给audioContext。AudioContext只相当于一个容器，要让它真正丰富起来需要将实际的音乐信息传递给它的。也就是将audio buffer数据传递给它的BufferSource属性。</p>
+<p>其实到了这里你应该有点晕了，不过没关系，看代码就会更明白一些，程序员是理解代码优于文字的一种生物。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> audioBufferSouceNode =<span style="color: #000000;"> audioContext.createBufferSource();
+audioBufferSouceNode.buffer </span>= buffer;</pre>
+</div>
+<p>&nbsp;</p>
+<p>就这么两名，把音频文件的内容装进了AudioContext。</p>
+<p>这时已经可以开始播放我们的音频了。</p>
+<div class="cnblogs_code">
+<pre>audioBufferSouceNode.start(0);</pre>
+</div>
+<p>&nbsp;</p>
+<p>这里参数是时间，表示从这段音频的哪个时刻开始播放。</p>
+<p>注意：在旧版本的浏览器里是使用onteOn()来进行播放的，参数一样，指开始时刻。</p>
+<p>但此时是听不到声音的，因为还差一步，需要将audioBufferSouceNode连接到audioContext.destination，这个AudioContext的destination也就相关于speaker（扬声器）。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">audioBufferSouceNode.connect(audioContext.destination);
+audioBufferSouceNode.start(</span>0);</pre>
+</div>
+<p>&nbsp;</p>
+<p>此刻就能够听到扬声器传过来动听的声音了。</p>
+<div class="cnblogs_code">
+<pre>_visualize: <span style="color: #0000ff;">function</span><span style="color: #000000;">(audioContext, buffer) {
+    </span><span style="color: #0000ff;">var</span> audioBufferSouceNode =<span style="color: #000000;"> audioContext.createBufferSource();
+    audioBufferSouceNode.connect(audioContext.destination);
+    audioBufferSouceNode.buffer </span>=<span style="color: #000000;"> buffer;
+    audioBufferSouceNode.start(</span>0<span style="color: #000000;">);
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2>创建分析器</h2>
+<p>创建获取频谱能量值的analyser节点。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> analyser = audioContext.createAnalyser();</pre>
+</div>
+<p>&nbsp;</p>
+<p>上面一步我们是直接将audioBufferSouceNode与audioContext.destination相连的，音频就直接输出到扬声器开始播放了，现在为了将音频在播放前截取，所以要把analyser插在audioBufferSouceNode与audioContext.destination之间。明白了这个道理，代码也就很简单了，audioBufferSouceNode连接到analyser,analyser连接destination。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">audioBufferSouceNode.connect(analyser);
+analyser.connect(audioContext.destination);</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>然后再开始播放，此刻所有音频数据都会经过analyser，我们再从analyser中获取频谱的能量信息，将其画出到Canvas即可。</p>
+<p>假设我们已经写好了画频谱图的方法_drawSpectrum(analyser);</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>_visualize: <span style="color: #0000ff;">function</span><span style="color: #000000;">(audioContext, buffer) {
+    </span><span style="color: #0000ff;">var</span> audioBufferSouceNode =<span style="color: #000000;"> audioContext.createBufferSource(),
+        analyser </span>=<span style="color: #000000;"> audioContext.createAnalyser();
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">将source与分析器连接</span>
+<span style="color: #000000;">    audioBufferSouceNode.connect(analyser);
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">将分析器与destination连接，这样才能形成到达扬声器的通路</span>
+<span style="color: #000000;">    analyser.connect(audioContext.destination);
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">将上一步解码得到的buffer数据赋值给source</span>
+    audioBufferSouceNode.buffer =<span style="color: #000000;"> buffer;
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">播放</span>
+    audioBufferSouceNode.start(0<span style="color: #000000;">);
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">音乐响起后，把analyser传递到另一个方法开始绘制频谱图了，因为绘图需要的信息要从analyser里面获取</span>
+    <span style="color: #0000ff;">this</span><span style="color: #000000;">._drawSpectrum(analyser);
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<h1>绘制精美的频谱图</h1>
+<p>接下来的工作，也是最后一步，也就是实现_drawSpectrum()方法，将跟随音乐而灵动的柱状频谱图画出到页面。</p>
+<h2>绘制柱状能量槽</h2>
+<p>首先你要对数字信号处理有一定了解，吓人的，不了解也没多大关系。频谱反应的是声音各频率上能量的分布，所以叫能量槽也没有硬要跟游戏联系起来的嫌疑，是将输入的信号经过傅里叶变化得到的（大学里的知识终于还是可以派得上用场了）。但特么我知道这些又怎样呢，仅仅为了装逼显摆而以。真实的频谱图是频率上连续的，不是我们看到的最终效果那样均匀分开锯齿状的。</p>
+<p>通过下面的代码我们可以从analyser中得到此刻的音频中各频率的能量值。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> array = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Uint8Array(analyser.frequencyBinCount);
+analyser.getByteFrequencyData(array);</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>此刻array中存储了从低频0Hz到高频~Hz的所有数据。频率做为X轴，能量值做为Y轴，我们可以得到类似下面的图形。</p>
+<p>你也可以上传文件自己看一下效果&nbsp;<a href="http://sandbox.runjs.cn/show/1kn8nr4l" target="_blank">http://sandbox.runjs.cn/show/1kn8nr4l&nbsp;</a><a href="http://runjs.cn/detail/1kn8nr4l" target="_blank"><br></a></p>
+<p><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/160012551712787.png" alt=""></p>
+<p>所以，比如array[0]=100,我们就知道在x=0处画一个高为100单位长度的长条，array[1]=50，然后在x=1画一个高为50单位长度的柱条，从此类推，如果用一个for循环遍历array将其全部画出的话，便是你看到的上图。</p>
+<h3>采样</h3>
+<p>但我们要的不是那样的效果，我们只需在所有数据中进行抽样，比如设定一个步长100，进度抽取，来画出整个频谱图中的部分柱状条。</p>
+<p>或者先根据画面的大小，设计好每根柱条的宽度，以及他们的间隔，从而计算出画面中一共需要共多少根，再来推算出这个采样步长该取多少，本例便是这样实现的。说来还是有点晕，下面看简单的代码：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">var</span> canvas = document.getElementById('canvas'<span style="color: #000000;">),
+    meterWidth </span>= 10, <span style="color: #008000;">//</span><span style="color: #008000;">能量条的宽度</span>
+    gap = 2, <span style="color: #008000;">//</span><span style="color: #008000;">能量条间的间距</span>
+    meterNum = 800 / (10 + 2); <span style="color: #008000;">//</span><span style="color: #008000;">计算当前画布上能画多少条</span>
+<span style="color: #0000ff;">var</span> step = Math.round(array.length / meterNum); <span style="color: #008000;">//</span><span style="color: #008000;">计算从analyser中的采样步长</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>我们的画布即Canvas宽800px,同时我们设定柱条宽10px , 柱与柱间间隔为2px，所以得到meterNum为总共可以画的柱条数。再用数组总长度除以这个数目就得到采样的步长，即在遍历array时每隔step这么长一段我们从数组中取一个值出来画，这个值为array[i*step]。这样就均匀地取出meterNum个值，从而正确地反应了原来频谱图的形状。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">var</span> canvas = document.getElementById('canvas'<span style="color: #000000;">),
+    cwidth </span>=<span style="color: #000000;"> canvas.width,
+    cheight </span>= canvas.height - 2<span style="color: #000000;">,
+    meterWidth </span>= 10, <span style="color: #008000;">//</span><span style="color: #008000;">能量条的宽度</span>
+    gap = 2, <span style="color: #008000;">//</span><span style="color: #008000;">能量条间的间距</span>
+    meterNum = 800 / (10 + 2), <span style="color: #008000;">//</span><span style="color: #008000;">计算当前画布上能画多少条</span>
+    ctx = canvas.getContext('2d'<span style="color: #000000;">),
+    array </span>= <span style="color: #0000ff;">new</span><span style="color: #000000;"> Uint8Array(analyser.frequencyBinCount);
+analyser.getByteFrequencyData(array);
+</span><span style="color: #0000ff;">var</span> step = Math.round(array.length /<span style="color: #000000;"> meterNum);计算从
+analyser中的采样步长
+ctx.clearRect(</span>0, 0, cwidth, cheight); <span style="color: #008000;">//</span><span style="color: #008000;">清理画布准备画画</span><span style="color: #008000;">
+//</span><span style="color: #008000;">定义一个渐变样式用于画图</span>
+gradient = ctx.createLinearGradient(0, 0, 0, 300<span style="color: #000000;">);
+gradient.addColorStop(</span>1, '#0f0'<span style="color: #000000;">);
+gradient.addColorStop(</span>0.5, '#ff0'<span style="color: #000000;">);
+gradient.addColorStop(</span>0, '#f00'<span style="color: #000000;">);
+ctx.fillStyle </span>=<span style="color: #000000;"> gradient;
+</span><span style="color: #008000;">//</span><span style="color: #008000;">对信源数组进行抽样遍历，画出每个频谱条</span>
+<span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span> i = 0; i &lt; meterNum; i++<span style="color: #000000;">) {
+    </span><span style="color: #0000ff;">var</span> value = array[i *<span style="color: #000000;"> step];
+    ctx.fillRect(i </span>* 12 <span style="color: #008000;">/*</span><span style="color: #008000;">频谱条的宽度+条间间距</span><span style="color: #008000;">*/</span> , cheight - value +<span style="color: #000000;"> capHeight, meterWidth, cheight);
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<h3>使用requestAnimationFrame让柱条动起来</h3>
+<p>但上面绘制的仅仅是某一刻的频谱，要让整个画面动起来，我们需要不断更新画面，window.requestAnimationFrame()正好提供了更新画面得到动画效果的功能，关于requestAnimationFrame的使用及更多信息可以从我的上一篇博文&lt;<a href="http://www.cnblogs.com/Wayou/p/requestAnimationFrame.html" target="_blank">requestAnimationFrame，Web中写动画的另一种选择</a>&gt;中了解，这里直接给出简单改造后的代码，即得到我们要的效果了：跟随音乐而灵动的频谱柱状图。</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #0000ff;">var</span> canvas = document.getElementById('canvas'<span style="color: #000000;">),
+    cwidth </span>=<span style="color: #000000;"> canvas.width,
+    cheight </span>= canvas.height - 2<span style="color: #000000;">,
+    meterWidth </span>= 10, <span style="color: #008000;">//</span><span style="color: #008000;">能量条的宽度</span>
+    gap = 2, <span style="color: #008000;">//</span><span style="color: #008000;">能量条间的间距</span>
+    meterNum = 800 / (10 + 2), <span style="color: #008000;">//</span><span style="color: #008000;">计算当前画布上能画多少条</span>
+    ctx = canvas.getContext('2d'<span style="color: #000000;">);
+</span><span style="color: #008000;">//</span><span style="color: #008000;">定义一个渐变样式用于画图</span>
+gradient = ctx.createLinearGradient(0, 0, 0, 300<span style="color: #000000;">);
+gradient.addColorStop(</span>1, '#0f0'<span style="color: #000000;">);
+gradient.addColorStop(</span>0.5, '#ff0'<span style="color: #000000;">);
+gradient.addColorStop(</span>0, '#f00'<span style="color: #000000;">);
+ctx.fillStyle </span>=<span style="color: #000000;"> gradient;
+</span><span style="color: #0000ff;">var</span> drawMeter = <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+    </span><span style="color: #0000ff;">var</span> array = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(array);
+    </span><span style="color: #0000ff;">var</span> step = Math.round(array.length / meterNum); <span style="color: #008000;">//</span><span style="color: #008000;">计算采样步长</span>
+    ctx.clearRect(0, 0, cwidth, cheight); <span style="color: #008000;">//</span><span style="color: #008000;">清理画布准备画画</span>
+    <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span> i = 0; i &lt; meterNum; i++<span style="color: #000000;">) {
+        </span><span style="color: #0000ff;">var</span> value = array[i *<span style="color: #000000;"> step];
+        ctx.fillRect(i </span>* 12 <span style="color: #008000;">/*</span><span style="color: #008000;">频谱条的宽度+条间间距</span><span style="color: #008000;">*/</span> , cheight - value +<span style="color: #000000;"> capHeight, meterWidth, cheight);
+    }
+    requestAnimationFrame(drawMeter);
+}
+requestAnimationFrame(drawMeter);</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>查看效果<span style="text-decoration: underline;">&nbsp;<a href="http://sandbox.runjs.cn/show/q1ng0jgp" target="_blank">http://sandbox.runjs.cn/show/q1ng0jgp</a></span></p>
+<h2>绘制缓慢降落的帽头</h2>
+<p>到上面一步，主要工作已经完成。最后为了美观，再实现一下柱条上方缓慢降落的帽头。</p>
+<p>原理也很简单，就是在绘制柱条的同时在同一X轴的位置再绘制一个短的柱条，并且其开始和结束位置都要比频谱中的柱条高。难的地方便是如何实现缓慢降落。</p>
+<p>首先要搞清楚的一点是，我们拿一根柱条来说明问题，当此刻柱条高度高于前一时刻时，我们看到的是往上冲的一根频谱，所以这时帽头是紧贴着正文柱条的，这个好画。考虑相反的情况，当此刻高度要低于前一时刻的高度时，下方柱条是立即缩下去的，同时我们需要记住上一时刻帽头的高度位置，此刻画的时候就按照前一时刻的位置将Y-1来画。如果下一时刻频谱柱条还是没有超过帽头的位置，继续让它下降，Y-1画出帽头。</p>
+<p>通过上面的分析，所以我们在每次画频谱的时刻，需要将此刻频谱及帽头的Y值（即垂直方向的位置）记到一个循环外的变量中，在下次绘制的时刻从这个变量中读取，将此刻的值与变量中保存的上一刻的值进行比较，然后按照上面的分析作图。</p>
+<p>最后给出实现的代码：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>_drawSpectrum: <span style="color: #0000ff;">function</span><span style="color: #000000;">(analyser) {
+    </span><span style="color: #0000ff;">var</span> canvas = document.getElementById('canvas'<span style="color: #000000;">),
+        cwidth </span>=<span style="color: #000000;"> canvas.width,
+        cheight </span>= canvas.height - 2<span style="color: #000000;">,
+        meterWidth </span>= 10, <span style="color: #008000;">//</span><span style="color: #008000;">频谱条宽度</span>
+        gap = 2, <span style="color: #008000;">//</span><span style="color: #008000;">频谱条间距</span>
+        capHeight = 2<span style="color: #000000;">,
+        capStyle </span>= '#fff'<span style="color: #000000;">,
+        meterNum </span>= 800 / (10 + 2), <span style="color: #008000;">//</span><span style="color: #008000;">频谱条数量</span>
+        capYPositionArray = []; <span style="color: #008000;">//</span><span style="color: #008000;">将上一画面各帽头的位置保存到这个数组</span>
+    ctx = canvas.getContext('2d'<span style="color: #000000;">),
+    gradient </span>= ctx.createLinearGradient(0, 0, 0, 300<span style="color: #000000;">);
+    gradient.addColorStop(</span>1, '#0f0'<span style="color: #000000;">);
+    gradient.addColorStop(</span>0.5, '#ff0'<span style="color: #000000;">);
+    gradient.addColorStop(</span>0, '#f00'<span style="color: #000000;">);
+    </span><span style="color: #0000ff;">var</span> drawMeter = <span style="color: #0000ff;">function</span><span style="color: #000000;">() {
+        </span><span style="color: #0000ff;">var</span> array = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Uint8Array(analyser.frequencyBinCount);
+        analyser.getByteFrequencyData(array);
+        </span><span style="color: #0000ff;">var</span> step = Math.round(array.length / meterNum); <span style="color: #008000;">//</span><span style="color: #008000;">计算采样步长</span>
+        ctx.clearRect(0, 0<span style="color: #000000;">, cwidth, cheight);
+        </span><span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span> i = 0; i &lt; meterNum; i++<span style="color: #000000;">) {
+            </span><span style="color: #0000ff;">var</span> value = array[i * step]; <span style="color: #008000;">//</span><span style="color: #008000;">获取当前能量值</span>
+            <span style="color: #0000ff;">if</span> (capYPositionArray.length &lt;<span style="color: #000000;"> Math.round(meterNum)) {
+                capYPositionArray.push(value); </span><span style="color: #008000;">//</span><span style="color: #008000;">初始化保存帽头位置的数组，将第一个画面的数据压入其中</span>
+<span style="color: #000000;">            };
+            ctx.fillStyle </span>=<span style="color: #000000;"> capStyle;
+            </span><span style="color: #008000;">//</span><span style="color: #008000;">开始绘制帽头</span>
+            <span style="color: #0000ff;">if</span> (value &lt; capYPositionArray[i]) { <span style="color: #008000;">//</span><span style="color: #008000;">如果当前值小于之前值</span>
+                ctx.fillRect(i * 12, cheight - (--capYPositionArray[i]), meterWidth, capHeight); <span style="color: #008000;">//</span><span style="color: #008000;">则使用前一次保存的值来绘制帽头</span>
+            } <span style="color: #0000ff;">else</span><span style="color: #000000;"> {
+                ctx.fillRect(i </span>* 12, cheight - value, meterWidth, capHeight); <span style="color: #008000;">//</span><span style="color: #008000;">否则使用当前值直接绘制</span>
+                capYPositionArray[i] =<span style="color: #000000;"> value;
+            };
+            </span><span style="color: #008000;">//</span><span style="color: #008000;">开始绘制频谱条</span>
+            ctx.fillStyle =<span style="color: #000000;"> gradient;
+            ctx.fillRect(i </span>* 12, cheight - value +<span style="color: #000000;"> capHeight, meterWidth, cheight);
+        }
+        requestAnimationFrame(drawMeter);
+    }
+    requestAnimationFrame(drawMeter);
+}</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>Reference:</p>
+<ol>
+<li>A question about how to make an audio visualizer: <a href="http://stackoverflow.com/questions/3351147/html5-audio-visualizer" target="_blank">http://stackoverflow.com/questions/3351147/html5-audio-visualizer</a></li>
+<li>Web audio API: <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/" target="_blank">http://www.html5rocks.com/en/tutorials/webaudio/intro/</a></li>
+<li>File reader in JavaScript: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/FileReader</a></li>
+<li>Local audio visualizer source code: <a href="http://cbrandolino.github.io/local-audio-visualizer/docs/local_audio_visualizer" target="_blank">http://cbrandolino.github.io/local-audio-visualizer/docs/local_audio_visualizer</a></li>
+<li>Audio context from MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext</a></li>
+<li>Window.requestAnimationFrame():<a href="https://developer.mozilla.org/en/docs/Web/API/window.requestAnimationFrame" target="_blank">https://developer.mozilla.org/en/docs/Web/API/window.requestAnimationFrame</a></li>
+<li>3d visualizer with three.js : <a href="http://do.adive.in/music/" target="_blank">http://do.adive.in/music/</a></li>
+<li>A CodePen example: <a href="http://s.codepen.io/Wayou/fullpage/auCLE" target="_blank">http://s.codepen.io/Wayou/fullpage/auCLE</a>?</li>
+<li>Visualizer tutorial : <a href="http://www.smartjava.org/content/exploring-html5-web-audio-visualizing-sound" target="_blank">http://www.smartjava.org/content/exploring-html5-web-audio-visualizing-sound</a></li>
+<li>Web audio examples from Google code : <a href="http://chromium.googlecode.com/svn/trunk/samples/audio/index.html" target="_blank">http://chromium.googlecode.com/svn/trunk/samples/audio/index.html</a></li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p><a class="fastCom" id="fastCom" title="快速评论" href="http://www.cnblogs.com/Wayou/p/3543577.html#comment_form_container"></a></div><div id="MySignature" style="display: block;"><p>Feel free to repost but keep the link to this page please!</p></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/Wayou/category/467061.html" target="_blank">HTML5</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/Wayou/tag/javascript/">javascript</a>, <a href="http://www.cnblogs.com/Wayou/tag/HTML5/">HTML5</a>, <a href="http://www.cnblogs.com/Wayou/tag/%E5%8A%A8%E7%94%BB/">动画</a>, <a href="http://www.cnblogs.com/Wayou/tag/Audio/">Audio</a>, <a href="http://www.cnblogs.com/Wayou/tag/visualizer/">visualizer</a>, <a href="http://www.cnblogs.com/Wayou/tag/%E9%9F%B3%E4%B9%90%E9%A2%91%E8%B0%B1/">音乐频谱</a>, <a href="http://www.cnblogs.com/Wayou/tag/%E7%89%B9%E6%95%88/">特效</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3543577,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;c5e8573b-1ed6-e111-aa3f-842b2b196315&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/Wayou/" target="_blank"><img src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/20140914104240.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/Wayou/">刘哇勇</a><br>
+            <a href="http://home.cnblogs.com/u/Wayou/followees">关注 - 10</a><br>
+            <a href="http://home.cnblogs.com/u/Wayou/followers">粉丝 - 2059</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor">荣誉：<a href="http://www.cnblogs.com/expert/" target="_blank">推荐博客</a></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;c5e8573b-1ed6-e111-aa3f-842b2b196315&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(3543577,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">30</span>
+    </div>
+    <div class="buryit" onclick="votePost(3543577,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/Wayou/p/requestAnimationFrame.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/Wayou/p/requestAnimationFrame.html" title="发布于2014-02-13 17:30">requestAnimationFrame，Web中写动画的另一种选择</a><br><a href="http://www.cnblogs.com/Wayou/p/browser_market_share.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/Wayou/p/browser_market_share.html" title="发布于2014-02-17 00:53">statcounter统计的浏览器市场占有率</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-02-16 00:39</span> <a href="http://www.cnblogs.com/Wayou/">刘哇勇</a> 阅读(<span id="post_view_count">22941</span>) 评论(<span id="post_comment_count">23</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=3543577" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/Wayou/p/3543577.html#" onclick="AddToWz(3543577);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=123544,cb_entryId=3543577,cb_blogApp=currentBlogApp,cb_blogUserGuid='c5e8573b-1ed6-e111-aa3f-842b2b196315',cb_entryCreatedDate='2014/2/16 0:39:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876422" class="layer">#1楼</a><a name="2876422" id="comment_anchor_2876422"></a>  <span class="comment_date">2014-02-16 23:21</span> <a id="a_comment_author_2876422" href="http://www.cnblogs.com/hustskyking/" target="_blank">Barret Lee</a> <a href="http://msg.cnblogs.com/send/Barret%20Lee" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2876422" class="blog_comment_body">格式够乱，博客园不是首发吧~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2876422,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2876422,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2876422_avatar" style="display:none;">http://pic.cnblogs.com/face/387325/20150805014702.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876427" class="layer">#2楼</a><a name="2876427" id="comment_anchor_2876427"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-02-16 23:29</span> <a id="a_comment_author_2876427" href="http://www.cnblogs.com/Wayou/" target="_blank">刘哇勇</a> <a href="http://msg.cnblogs.com/send/%E5%88%98%E5%93%87%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2876427" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876422" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2876422);">@</a>
+Barret Lee<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876422" title="查看引用原文">引用</a></legend>格式够乱，博客园不是首发吧~</fieldset><br>是首发的哦~你是指代码的格式么还是什么</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2876427,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2876427,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2876427_avatar" style="display:none;">http://pic.cnblogs.com/face/431064/20140914104240.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876432" class="layer">#3楼</a><a name="2876432" id="comment_anchor_2876432"></a>  <span class="comment_date">2014-02-16 23:46</span> <a id="a_comment_author_2876432" href="http://www.cnblogs.com/chenying99/" target="_blank">刺猬的温驯</a> <a href="http://msg.cnblogs.com/send/%E5%88%BA%E7%8C%AC%E7%9A%84%E6%B8%A9%E9%A9%AF" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2876432" class="blog_comment_body">效果好酷哦</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2876432,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2876432,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876584" class="layer">#4楼</a><a name="2876584" id="comment_anchor_2876584"></a>  <span class="comment_date">2014-02-17 10:03</span> <a id="a_comment_author_2876584" href="http://www.cnblogs.com/vbfool/" target="_blank">vbfool</a> <a href="http://msg.cnblogs.com/send/vbfool" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2876584" class="blog_comment_body">始终对HTML没什么好感啊，话说我都用IE11了，还是没有Audio的API么</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2876584,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2876584,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2876584_avatar" style="display:none;">http://pic.cnblogs.com/face/181045/20130802110703.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876872" class="layer">#5楼</a><a name="2876872" id="comment_anchor_2876872"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-02-17 14:08</span> <a id="a_comment_author_2876872" href="http://www.cnblogs.com/Wayou/" target="_blank">刘哇勇</a> <a href="http://msg.cnblogs.com/send/%E5%88%98%E5%93%87%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2876872" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876584" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2876584);">@</a>
+vbfool<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2876584" title="查看引用原文">引用</a></legend>始终对HTML没什么好感啊，话说我都用IE11了，还是没有Audio的API么</fieldset><br>IE11没有的哦~<br>详见<a href="http://caniuse.com/audio-api" target="_blank">http://caniuse.com/audio-api</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2876872,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2876872,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2876872_avatar" style="display:none;">http://pic.cnblogs.com/face/431064/20140914104240.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2885696" class="layer">#6楼</a><a name="2885696" id="comment_anchor_2885696"></a>  <span class="comment_date">2014-03-01 12:43</span> <a id="a_comment_author_2885696" href="http://www.cnblogs.com/bbvi/" target="_blank">拉拉叟</a> <a href="http://msg.cnblogs.com/send/%E6%8B%89%E6%8B%89%E5%8F%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2885696" class="blog_comment_body">必须要赞一个啊 难得的好文！！！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2885696,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2885696,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2885696_avatar" style="display:none;">http://pic.cnblogs.com/face/u63907.jpg?id=23134257</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889304" class="layer">#7楼</a><a name="2889304" id="comment_anchor_2889304"></a>  <span class="comment_date">2014-03-05 23:34</span> <a id="a_comment_author_2889304" href="http://www.cnblogs.com/bbvi/" target="_blank">拉拉叟</a> <a href="http://msg.cnblogs.com/send/%E6%8B%89%E6%8B%89%E5%8F%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2889304" class="blog_comment_body">手机浏览器无法播放声音  没报错 例如google浏览器</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2889304,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2889304,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2889304_avatar" style="display:none;">http://pic.cnblogs.com/face/u63907.jpg?id=23134257</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889328" class="layer">#8楼</a><a name="2889328" id="comment_anchor_2889328"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-03-06 00:53</span> <a id="a_comment_author_2889328" href="http://www.cnblogs.com/Wayou/" target="_blank">刘哇勇</a> <a href="http://msg.cnblogs.com/send/%E5%88%98%E5%93%87%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2889328" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889304" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2889304);">@</a>
+拉拉叟<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889304" title="查看引用原文">引用</a></legend>手机浏览器无法播放声音  没报错 例如google浏览器</fieldset><br>sigh~wont fix...</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2889328,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2889328,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2889328_avatar" style="display:none;">http://pic.cnblogs.com/face/431064/20140914104240.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2890103" class="layer">#9楼</a><a name="2890103" id="comment_anchor_2890103"></a>  <span class="comment_date">2014-03-06 21:58</span> <a id="a_comment_author_2890103" href="http://www.cnblogs.com/bbvi/" target="_blank">拉拉叟</a> <a href="http://msg.cnblogs.com/send/%E6%8B%89%E6%8B%89%E5%8F%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2890103" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889328" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2889328);">@</a>
+Wayou<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2889328" title="查看引用原文">引用</a></legend>@拉拉叟<br><fieldset class="comment_quote"><legend>引用</legend>引用手机浏览器无法播放声音  没报错 例如google浏览器</fieldset><br>sigh~wont fix...</fieldset><br>万能的楼主能帮忙解决下吗？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2890103,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2890103,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2890103_avatar" style="display:none;">http://pic.cnblogs.com/face/u63907.jpg?id=23134257</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#2890124" class="layer">#10楼</a><a name="2890124" id="comment_anchor_2890124"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-03-06 22:47</span> <a id="a_comment_author_2890124" href="http://www.cnblogs.com/Wayou/" target="_blank">刘哇勇</a> <a href="http://msg.cnblogs.com/send/%E5%88%98%E5%93%87%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2890124" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2890103" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2890103);">@</a>
+拉拉叟<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#2890103" title="查看引用原文">引用</a></legend>@Wayou<br><fieldset class="comment_quote"><legend>引用</legend>引用@拉拉叟<br>引用引用手机浏览器无法播放声音  没报错 例如google浏览器</fieldset><br>sigh~wont fix...<br>万能的楼主能帮忙解决下吗？</fieldset><br>我用的塞班手机无法测试啊~要不你说下你的手机及浏览器版本</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2890124,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2890124,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2890124_avatar" style="display:none;">http://pic.cnblogs.com/face/431064/20140914104240.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3052146" class="layer">#11楼</a><a name="3052146" id="comment_anchor_3052146"></a>  <span class="comment_date">2014-10-28 04:05</span> <a id="a_comment_author_3052146" href="http://home.cnblogs.com/u/686266/" target="_blank">liuqyilin</a> <a href="http://msg.cnblogs.com/send/liuqyilin" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3052146" class="blog_comment_body">你好，非常谢谢你的分享，我最近正在研究这方面的东西。我想问下有没有办法延迟动画的播放呢，比如这个动画绘制柱状图是实时的，如果我希望它1秒重绘一次要怎么设置呢？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3052146,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3052146,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3109509" class="layer">#12楼</a><a name="3109509" id="comment_anchor_3109509"></a>  <span class="comment_date">2015-01-19 10:30</span> <a id="a_comment_author_3109509" href="http://www.cnblogs.com/breakdown/" target="_blank">break_happy</a> <a href="http://msg.cnblogs.com/send/break_happy" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3109509" class="blog_comment_body">学习了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3109509,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3109509,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3109509_avatar" style="display:none;">http://pic.cnblogs.com/face/367679/20141011152422.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3114876" class="layer">#13楼</a><a name="3114876" id="comment_anchor_3114876"></a>  <span class="comment_date">2015-01-26 12:51</span> <a id="a_comment_author_3114876" href="http://www.cnblogs.com/GordonWisdom/" target="_blank">Abners</a> <a href="http://msg.cnblogs.com/send/Abners" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3114876" class="blog_comment_body">很炫酷，我喜欢！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3114876,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3114876,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3130225" class="layer">#14楼</a><a name="3130225" id="comment_anchor_3130225"></a>  <span class="comment_date">2015-02-16 15:17</span> <a id="a_comment_author_3130225" href="http://www.cnblogs.com/hdchangchang/" target="_blank">hdchangchang</a> <a href="http://msg.cnblogs.com/send/hdchangchang" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3130225" class="blog_comment_body">如果我手里有一个音频的编码，怎么样在浏览器中播放出来呢？求助。邮箱：hdchangchang@126.com</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3130225,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3130225,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3130225_avatar" style="display:none;">http://pic.cnblogs.com/face/531639/20140918123423.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3131421" class="layer">#15楼</a><a name="3131421" id="comment_anchor_3131421"></a>  <span class="comment_date">2015-02-25 17:43</span> <a id="a_comment_author_3131421" href="http://www.cnblogs.com/cunjieliu/" target="_blank">雷锋叔叔Touch</a> <a href="http://msg.cnblogs.com/send/%E9%9B%B7%E9%94%8B%E5%8F%94%E5%8F%94Touch" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3131421" class="blog_comment_body">很受用的，多谢分享，要好好研究下</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3131421,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3131421,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3131421_avatar" style="display:none;">http://pic.cnblogs.com/face/600316/20141026201605.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3161907" class="layer">#16楼</a><a name="3161907" id="comment_anchor_3161907"></a>  <span class="comment_date">2015-04-13 21:42</span> <a id="a_comment_author_3161907" href="http://www.cnblogs.com/dreamapple/" target="_blank">dreamapple</a> <a href="http://msg.cnblogs.com/send/dreamapple" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3161907" class="blog_comment_body">好厉害，学习了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3161907,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3161907,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3161907_avatar" style="display:none;">http://pic.cnblogs.com/face/528655/20130515120134.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3179920" class="layer">#17楼</a><a name="3179920" id="comment_anchor_3179920"></a>  <span class="comment_date">2015-05-10 10:42</span> <a id="a_comment_author_3179920" href="http://www.cnblogs.com/Mrxiedh/" target="_blank">Mrxie</a> <a href="http://msg.cnblogs.com/send/Mrxie" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3179920" class="blog_comment_body">谢谢刘哇勇1！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3179920,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3179920,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3179920_avatar" style="display:none;">http://pic.cnblogs.com/face/740044/20150606102230.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3254818" class="layer">#18楼</a><a name="3254818" id="comment_anchor_3254818"></a>  <span class="comment_date">2015-08-26 17:33</span> <a id="a_comment_author_3254818" href="http://home.cnblogs.com/u/803375/" target="_blank">IDOLE</a> <a href="http://msg.cnblogs.com/send/IDOLE" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3254818" class="blog_comment_body">楼主，请教下，怎么用来播放放在服务器上的歌曲，求指教</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3254818,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3254818,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3254876" class="layer">#19楼</a><a name="3254876" id="comment_anchor_3254876"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2015-08-26 18:32</span> <a id="a_comment_author_3254876" href="http://www.cnblogs.com/Wayou/" target="_blank">刘哇勇</a> <a href="http://msg.cnblogs.com/send/%E5%88%98%E5%93%87%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3254876" class="blog_comment_body"><a href="http://www.cnblogs.com/Wayou/p/3543577.html#3254818" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3254818);">@</a>
+IDOLE<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/Wayou/p/3543577.html#3254818" title="查看引用原文">引用</a></legend>楼主，请教下，怎么用来播放放在服务器上的歌曲，求指教</fieldset><br>http://wayou.github.io/audio-visualizer-with-controls/</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3254876,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3254876,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3254876_avatar" style="display:none;">http://pic.cnblogs.com/face/431064/20140914104240.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3257044" class="layer">#20楼</a><a name="3257044" id="comment_anchor_3257044"></a>  <span class="comment_date">2015-08-30 16:55</span> <a id="a_comment_author_3257044" href="http://www.cnblogs.com/winxml/" target="_blank">Winxml</a> <a href="http://msg.cnblogs.com/send/Winxml" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3257044" class="blog_comment_body">请问目前关于在手机（特别是微信中播放的问题）无法显示的问题修复了吗？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3257044,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3257044,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3320809" class="layer">#21楼</a><a name="3320809" id="comment_anchor_3320809"></a>  <span class="comment_date">2015-12-04 15:02</span> <a id="a_comment_author_3320809" href="http://www.cnblogs.com/luckwolf/" target="_blank">妄串影帝</a> <a href="http://msg.cnblogs.com/send/%E5%A6%84%E4%B8%B2%E5%BD%B1%E5%B8%9D" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3320809" class="blog_comment_body">膜拜呀~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3320809,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3320809,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3320809_avatar" style="display:none;">http://pic.cnblogs.com/face/635118/20150714162254.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3367384" class="layer">#22楼</a><a name="3367384" id="comment_anchor_3367384"></a>  <span class="comment_date">2016-02-26 16:37</span> <a id="a_comment_author_3367384" href="http://home.cnblogs.com/u/898722/" target="_blank">micro_yoyo</a> <a href="http://msg.cnblogs.com/send/micro_yoyo" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3367384" class="blog_comment_body">博请教下，音频在播放的时候，我可以在同个文件中追加新内容吗？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3367384,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3367384,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Wayou/p/3543577.html#3370656" class="layer">#23楼</a><a name="3370656" id="comment_anchor_3370656"></a><span id="comment-maxId" style="display:none;">3370656</span><span id="comment-maxDate" style="display:none;">2016/3/3 0:52:49</span>  <span class="comment_date">2016-03-03 00:52</span> <a id="a_comment_author_3370656" href="http://home.cnblogs.com/u/902123/" target="_blank">ALexLi03</a> <a href="http://msg.cnblogs.com/send/ALexLi03" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3370656" class="blog_comment_body">太经典了，值得学习。怎么在多首歌曲中选择。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3370656,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3370656,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/Wayou/p/3543577.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/Wayou/p/3543577.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="https://group.cnblogs.com/topic/75389.html" target="_blank">【活动】优达学城正式发布“无人驾驶车工程师”课程</a><br><a href="http://www.rongcloud.cn/live" target="_blank">【推荐】移动直播百强八成都在用融云即时通讯云</a><br><a href="http://www.gcpowertools.com.cn/products/componentone_studio_enterprise.htm?utm_source=cnblogs&utm_medium=blogpage&utm_term=bottom&utm_content=C1&utm_campaign=community" target="_blank">【推荐】别再闷头写代码！找对工具，事半功倍，全能开发工具包用起来</a><br><a href="http://netease.im/promotion/1013?hmsr=bky10&from=bky10" target="_blank">【福利】网易云信1周年接入开发者突破10万，送红包活动火热开展中</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block">     <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-4210569241504288" data-ad-slot="5457903683" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/555394/" target="_blank">视频网站烧钱大战“升级” 爱奇艺明年要拿100亿买内容</a><br> ·  <a href="http://news.cnblogs.com/n/555392/" target="_blank">已开17家线下店，小牛电动称其累积里程数破一亿公里</a><br> ·  <a href="http://news.cnblogs.com/n/555391/" target="_blank">王健林和他震惊好莱坞的“小目标”</a><br> ·  <a href="http://news.cnblogs.com/n/555390/" target="_blank">传阿里巴巴将为口碑融资10亿美元 口碑估值80亿美元</a><br> ·  <a href="http://news.cnblogs.com/n/555389/" target="_blank">王磊离开网易云音乐后首亮相 公布百度音乐最新战略</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/devservice/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/24442-20161011141820868-1378717477.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/553682/" target="_blank">陈皓：什么是工程师文化？</a><br> ·  <a href="http://kb.cnblogs.com/page/551422/" target="_blank">没那么难，谈CSS的设计模式</a><br> ·  <a href="http://kb.cnblogs.com/page/550625/" target="_blank">程序猿媳妇儿注意事项</a><br> ·  <a href="http://kb.cnblogs.com/page/540529/" target="_blank">可是姑娘，你为什么要编程呢？</a><br> ·  <a href="http://kb.cnblogs.com/page/549631/" target="_blank">知其所以然（以算法学习为例）</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><a style="text-decoration: underline;" href="http://wayou.github.io/" target="_blank"> GitHub主页 </a>
+<br>
+<a style="text-decoration: underline;" href="http://weibo.com/liuwayong" target="_blank">@刘哇勇</a>
+<br>
+<a href="mailto:liuwayong@gmail.com">liuwayong(at)gmail.com</a><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/Wayou/">刘哇勇</a><br>园龄：<a href="http://home.cnblogs.com/u/Wayou/" title="入园时间：2012-07-25">4年2个月</a><br>荣誉：<a href="http://www.cnblogs.com/expert/">推荐博客</a><br>粉丝：<a href="http://home.cnblogs.com/u/Wayou/followers/">2059</a><br>关注：<a href="http://home.cnblogs.com/u/Wayou/followees/">10</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;c5e8573b-1ed6-e111-aa3f-842b2b196315&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类<span style="font-size:11px;font-weight:normal">(87)</span></h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/Wayou/category/566741.html">CSS(9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/Wayou/category/467069.html">DB(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/Wayou/category/467061.html">HTML5(13)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/Wayou/category/467062.html">JavaScript(14)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/Wayou/category/566742.html">jQuery(12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/Wayou/category/467068.html">MVC(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/Wayou/category/565730.html">node.js(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/Wayou/category/479846.html">Others(28)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/Wayou/category/565732.html">three.js(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/Wayou/category/467064.html">札记(6)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/Wayou/p/goodui.html">1. 好的用户界面-界面设计的一些技巧(438)</a></li><li><a href="http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html">2. 前端不为人知的一面--前端冷知识集锦(255)</a></li><li><a href="http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html">3. jQuery插件开发精品教程，让你的jQuery提升一个台阶(210)</a></li><li><a href="http://www.cnblogs.com/Wayou/p/chrome-console-tips-and-tricks.html">4. Chrome 控制台不完全指南(157)</a></li><li><a href="http://www.cnblogs.com/Wayou/archive/2012/11/08/some_words.html">5. 一个.Net程序员关于学习的思考顺带思考人生(123)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2016 刘哇勇
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<a id="toTop" title="电梯直达顶部！" href="http://www.cnblogs.com/Wayou/p/3543577.html#home" style="position: fixed; bottom: 0px; right: 0px; opacity: 0.5; display: none;">
+<img title="" alt="" src="./开大你的音响，感受HTML5 Audio API带来的视听盛宴 - 刘哇勇 - 博客园_files/o_up.png">
+</a>
+
+<div class="wanker" data-wanker="">
+  <div class="wanker-content">
+    <h1>Bingo!!</h1>
+    <p>恭喜妳发现本彩蛋， happy coding</p>
+<p>\(^___________^)/</p>
+  </div>
+</div>
+
+<!--[if false]>
+少年，不得不说，这是缘分。简历快到碗里来，贴吧欢迎你 liuwayong@gmail.com :)  
+
+                                            `--.       `                                             
+                                          :hddhs.  .+yhs/`                                          
+                                         .yddddd+ -yddddd+                                          
+                                     ``  .yddddd+ +ddddddo`                                         
+                                   .+yys:`:yhhhs. :hdddhs. `                                        
+                                  `yddddd+``--.    .://-.+sss+.                                     
+                                  :ddddddy.   `---.`   `sdddddy-                                    
+ -/////////:-.               `://.`shdddh+  -oyhhhhs/` .ydddddh/`-------. .--```  `------.--------` 
+ /hhyyssssyyyy/`             `oss: `:++/-``/hhhhddddhs-`oddddds..yyooosy+`+hyooo- :yysshh+yyoyysyy/ 
+ /hhs.````./yhy- -:::::::-.  `///-      ./yddy.-hdddddho::+++:` .hh-o+:h+`+hs---` :yy--hh+hy.yy:oh/ 
+ /hhy/:::::oyho. :ooooooyyyo.`shy/    -oyyo/+: .y++hdy+oyo:`    .hh-hs:h+.ohs-..` :yy--hh+hy.yy:oh/ 
+ /hhhyyyyyyhhy:`  .-----:shy/`shy/  `+hdo``+o/ .o``yds .ydhy-   .hh-hs:h+oyyssyy+ :yy--hh+hy-yy/sh/ 
+ /hhs-...../yhy/.oyysssssyhy/`shy/  :hdh: :dds .o``yds .ydddy.  .hh-hs:h+sho``yh+ :yy--hh+hhssssss: 
+ /hhs-....-/yhho/hhs-```.shy/`shy/  -hdds-`-:- .s.`.:- .ydddy.  `/+ohho+-sho  yh+ :yy::hh+hy``````  
+ /hhhyyyyyyhyyo..syyyssssyyy/`syy/   :yddhyssssshhsssssyhddy:    /oy+oyo:shyooyh+ -yyssyo/yhoooooo: 
+ .----------.`    .---------` .--`    `-/////:-....-/+ooo+:`     --- `--..------`         .-------. <![endif]-->
+<!--PageEndHtml Block End-->
+
+
+</body></html>
